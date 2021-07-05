@@ -13,7 +13,12 @@ class MyTestCase(unittest.TestCase):
     def test_addition(self):
         test_data = CsvReader('/src/Unit Test Addition.csv').data
         for row in test_data:
-            self.assertAlmostEqual(self.calculator.add(row['Value 1'], row['Value 2']), float(row['Result']), 1)
+            self.assertAlmostEqual(self.calculator.add(row['Value 1'], row['Value 2']), float(row['Result']), 0)
+
+    def test_subtraction(self):
+        test_data = CsvReader('/src/Unit Test Subtraction.csv').data
+        for row in test_data:
+            self.assertAlmostEqual(self.calculator.subtract(row['Value 1'], row['Value 2']), float(row['Result']), 0)
 
 
 if __name__ == '__main__':
