@@ -36,6 +36,12 @@ class MyTestCase(unittest.TestCase):
         for row in test_data:
             self.assertAlmostEqual(self.calculator.square(row['Value 1']), float(row['Result']), 0)
 
+    def test_squareroot(self):
+        test_data = CsvReader('/src/Unit Test Square Root.csv').data
+        for row in test_data:
+            self.assertAlmostEqual(self.calculator.squareroot(row['Value 1']), float(row['Result']), 0)
+
+
 
 if __name__ == '__main__':
     unittest.main()
