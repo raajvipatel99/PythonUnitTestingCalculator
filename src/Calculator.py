@@ -7,8 +7,10 @@ from SquareRoot import SquareRoot
 
 class Calculator:
 
+    result = 0
+
     def __init__(self):
-         self.result = 0
+         pass
 
     def add(self, a, b):
         self.result = Addition.addition(a, b)
