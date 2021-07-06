@@ -6,10 +6,9 @@ from Square import Square
 from SquareRoot import SquareRoot
 
 class Calculator:
-    result = 0
 
     def __init__(self):
-        pass
+         self.result = 0
 
     def add(self, a, b):
         self.result = Addition.addition(a, b)
@@ -20,8 +19,8 @@ class Calculator:
         return self.result
 
     def divide(self, a, b):
-        self.result = Division.division(a, b)
-        return self.result
+       self.result = Division.division(a, b)
+       return self.result
 
     def multiply(self, a, b):
         self.result = Multiplication.multiplication(a, b)

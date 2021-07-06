@@ -11,3 +11,7 @@ Snapshots:
 ![test Failed](images/Failed1.png "Tests Failed")
 
 ![Run Successful](images/Failed2.png "Tests Failed")
+
+Notes: 
+
+UseCalaculator module has the code for running the Calculator normally (without Unit Testing). 
