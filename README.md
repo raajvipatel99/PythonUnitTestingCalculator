@@ -14,4 +14,4 @@ Snapshots:
 
 Notes: 
 
-UseCalaculator module has the code for running the Calculator normally (without Unit Testing). 
+UseCalaculator module is an extra module that has the code for running the Calculator normally (without Unit Testing). 
